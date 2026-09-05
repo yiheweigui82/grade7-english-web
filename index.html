@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#187a68">
+  <title>阳光英语 · Sunshine English — 七年级英语学习网站</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background: linear-gradient(160deg, #e8f6f1 0%, #fdf8ef 55%, #fef3e2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      color: #23443c;
+    }
+    .wrap { max-width: 900px; width: 100%; text-align: center; }
+    .logo {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: #187a68; color: #fff;
+      padding: 10px 26px; border-radius: 999px;
+      font-size: 20px; font-weight: 700; letter-spacing: 1px;
+      box-shadow: 0 6px 18px rgba(24, 122, 104, .25);
+    }
+    .logo small { font-size: 12px; font-weight: 400; opacity: .85; letter-spacing: 2px; }
+    h1 { margin: 28px 0 8px; font-size: clamp(26px, 5vw, 40px); color: #145a4d; }
+    .sub { font-size: clamp(15px, 2.5vw, 18px); color: #5d7a72; margin-bottom: 10px; }
+    .hint { font-size: 14px; color: #8aa39b; margin-bottom: 36px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .card {
+      display: block; text-decoration: none; text-align: left;
+      background: #fff; border-radius: 20px; padding: 28px;
+      box-shadow: 0 8px 26px rgba(35, 68, 60, .10);
+      border: 3px solid transparent;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 14px 34px rgba(35, 68, 60, .16); }
+    .card.u1 { border-color: #ffe3a3; }
+    .card.u2 { border-color: #b9e0d6; }
+    .card .badge {
+      display: inline-block; font-size: 13px; font-weight: 600;
+      border-radius: 999px; padding: 4px 14px; margin-bottom: 16px;
+    }
+    .card.u1 .badge { background: #fff3d6; color: #a06a00; }
+    .card.u2 .badge { background: #ddf2ec; color: #0f6b58; }
+    .card h2 { font-size: 24px; color: #23443c; margin-bottom: 4px; }
+    .card .en { font-size: 16px; color: #187a68; font-weight: 600; margin-bottom: 14px; }
+    .card p { font-size: 14.5px; line-height: 1.75; color: #5d7a72; }
+    .enter {
+      display: inline-block; margin-top: 18px;
+      background: #187a68; color: #fff !important;
+      font-size: 15px; font-weight: 600;
+      padding: 9px 22px; border-radius: 999px;
+    }
+    .card.u1:hover .enter { background: #a06a00; }
+    .card.u2:hover .enter { background: #0f6b58; }
+    .foot { margin-top: 40px; font-size: 13px; color: #8aa39b; line-height: 1.8; }
+    .foot b { color: #5d7a72; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">☀️ 阳光英语 <small>SUNSHINE ENGLISH</small></div>
+    <h1>七年级英语 · 互动学习网站</h1>
+    <p class="sub">点开课文就能读：小学熟词 / 初中新词分开标注，点词听发音、看拆解</p>
+    <p class="hint">👇 选择你要学习的单元</p>
+
+    <div class="cards">
+      <a class="card u1" href="unit1/index.html">
+        <span class="badge">UNIT 1</span>
+        <h2>这就是我</h2>
+        <p class="en">This is me!</p>
+        <p>打招呼、介绍自己与朋友：姓名、年龄、班级、来自哪里……</p>
+        <span class="enter">开始学习 →</span>
+      </a>
+      <a class="card u2" href="unit2/index.html">
+        <span class="badge">UNIT 2</span>
+        <h2>爱好</h2>
+        <p class="en">Hobbies</p>
+        <p>聊聊喜欢做的事：阅读、运动、音乐、宠物与课余生活……</p>
+        <span class="enter">开始学习 →</span>
+      </a>
+    </div>
+
+    <div class="foot">
+      <b>提示：</b>页面可离线使用 —— 下载整个项目后，直接双击 <b>index.html</b> 即可打开，无需联网。<br>
+      单词与例句朗读音频已包含在项目中。
+    </div>
+  </div>
+</body>
+</html>
