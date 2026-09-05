@@ -1,0 +1,28 @@
+👋 基础交流与人物
+类别	英文单词
+问候与礼貌	hello, hi, goodbye, yes, no, thank you, please, sorry, good morning, good afternoon, nice, great, really, thanks
+人称与代词	I, you, he, she, it, we, they, my, your, his, her, our, their, me, him, us, them
+人物与身份	boy, girl, teacher, student, friend, man, woman, baby, people, Mr, Miss, Mrs
+家庭成员	father/dad, mother/mom, brother, sister, grandma/grandmother, grandpa/grandfather, uncle, aunt, cousin
+🏫 学校与日常生活
+类别	英文单词
+学校与教室	school, classroom, class, lesson, desk, chair, board, door, window, wall, floor, light, picture, computer, fan, room
+学习用品	book, pen, pencil, bag/schoolbag, ruler, eraser, pencil-case, crayon, sharpener
+家居与物品	home, house, bed, table, sofa, TV, phone, clock, watch, cup, plate, spoon, fork, knife, bowl, lamp
+颜色	red, blue, yellow, green, black, white, orange, brown, pink, purple
+数字	one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty
+💪 身体、动作与描述
+类别	英文单词
+身体部位	head, eye, ear, mouth, nose, face, arm, hand, finger, leg, foot, body
+基础动作	jump, run, walk, sit, stand, read, write, draw, open, close, look, see, listen, speak, tell, ask, answer, think, know, find, put, take, bring, give, call
+形容词	big, small, long, short, tall, good, bad, happy, sad, angry, tired, hungry, thirsty, cold, hot, warm, cool, new, old, young, beautiful, strong
+🐱 动物、食物与自然
+类别	英文单词
+动物	cat, dog, bird, fish, monkey, panda, rabbit, duck, pig, bear, elephant, mouse, squirrel, giraffe, deer, chicken
+食物与饮品	apple, banana, rice, milk, water, bread, cake, hamburger, hot dog, chicken, French fries, Coke, juice, tea, coffee, egg, beef, pear, orange, watermelon, strawberry, grape
+自然与天气	sun, moon, star, rain, snow, cloud, wind, weather, hot, cold, warm, cool, spring, summer, autumn/fall, winter
+📅 时间、地点与方位
+类别	英文单词
+时间	morning, afternoon, evening, night, today, tomorrow, yesterday, week, month, year, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, January, February, March, April, May, June, July, August, September, October, November, December
+地点与方位	zoo, park, garden, farm, shop, supermarket, hospital, in, on, under, behind, in front of, next to, near
+交通工具	bus, bike, car, plane, taxi, train, boat, ship, jeep

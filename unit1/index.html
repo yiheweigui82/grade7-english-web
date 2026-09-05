@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#187a68">
+  <title>Unit 1 · This is me! | 阳光英语</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="typography.css">
+  <script defer src="assets/lucide.js"></script>
+  <script defer src="primary-words.js"></script>
+  <script defer src="content.js"></script>
+  <script defer src="examples.js"></script>
+  <script defer src="morphology.js"></script>
+  <script defer src="audio-manifest.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#welcome"><span class="brand-icon"><i data-lucide="sun"></i></span><span>阳光英语<small>SUNSHINE ENGLISH</small></span></a>
+    <div class="course"><span>七年级 · 上册</span><strong>Unit 1</strong><b>This is me!</b></div>
+    <p class="nav-label">本单元课程</p>
+    <nav id="chapters" aria-label="单元目录"></nav>
+    <div class="sidebar-bottom"><div class="progress-title"><span>单元足迹</span><span id="progress-text">0 / 7</span></div><progress id="course-progress" value="0" max="7"></progress><button class="vocab-open" data-action="vocabulary"><i data-lucide="notebook-pen"></i>我的单词本<span id="word-count">0</span></button><span class="unit-next">Unit 2 · Hobbies <small>待加入</small></span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="打开目录" title="目录" data-action="menu"><i data-lucide="menu"></i></button><span>我的英语课本</span><span class="slash">/</span><strong>Unit 1</strong></div>
+      <div class="top-actions"><div class="theme-switch" role="group" aria-label="页面风格"><button data-theme="boy" aria-pressed="true"><span class="swatch boy"></span>男生</button><button data-theme="girl" aria-pressed="false"><span class="swatch girl"></span>女生</button></div><button class="icon-button" data-action="settings" aria-label="阅读设置" title="阅读设置"><i data-lucide="settings-2"></i></button></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="page-footer"><button id="previous" class="text-button"><i data-lucide="arrow-left"></i>上一课</button><span id="footer-pages"></span><button id="next" class="primary-button">下一课<i data-lucide="arrow-right"></i></button></footer>
+  </div>
+  <dialog id="word-dialog" class="word-dialog" aria-labelledby="word-title"><form method="dialog"><button class="icon-button close-dialog" aria-label="关闭" title="关闭"><i data-lucide="x"></i></button></form><p class="eyebrow">WORD SPOTLIGHT</p><h2 id="word-title"></h2><p id="word-meaning"></p><p id="word-base" class="muted"></p><div class="word-actions"><button class="primary-button" id="word-speak"><i data-lucide="volume-2"></i>朗读单词</button><button class="secondary-button" id="word-save"><i data-lucide="bookmark-plus"></i>加入单词本</button></div><section class="word-structure" aria-labelledby="structure-heading"><h3 id="structure-heading">单词拆解</h3><div id="word-structure-content"></div></section><section class="word-example" aria-labelledby="example-heading"><div class="example-heading"><h3 id="example-heading">简单例句</h3><button class="icon-button" id="example-speak" aria-label="朗读例句" title="朗读例句"><i data-lucide="volume-2"></i></button></div><p id="word-example-en" lang="en"></p><p id="word-example-zh" lang="zh-CN"></p></section></dialog>
+  <dialog id="source-dialog" class="source-dialog"><div class="dialog-header"><h2>教材原页</h2><select id="source-select" aria-label="教材页码"></select><button class="icon-button" data-close="source-dialog" aria-label="关闭原页" title="关闭"><i data-lucide="x"></i></button></div><div class="source-body"><img id="source-image" alt="Unit 1 教材原页"></div></dialog>
+  <dialog id="settings-dialog"><div class="dialog-header"><h2>阅读设置</h2><button class="icon-button" data-close="settings-dialog" aria-label="关闭设置" title="关闭"><i data-lucide="x"></i></button></div><div class="settings-body"><label>字号 <input id="font-size" type="range" min="20" max="30" step="1"><output id="font-output"></output></label><label>朗读速度 <input id="speech-rate" type="range" min="0.65" max="1.15" step="0.05"><output id="rate-output"></output></label><label>熟词范围<select id="known-mode"><option value="basic">小学词表 + 基础语法词</option><option value="strict">仅小学词表</option></select></label><label class="check-row"><input type="checkbox" id="highlight-toggle">高亮新词</label><p class="muted" id="primary-count"></p></div></dialog>
+  <dialog id="vocabulary-dialog" class="vocabulary-dialog"><div class="dialog-header"><h2>我的单词本</h2><button class="icon-button" data-action="export-vocab" aria-label="导出单词本" title="导出单词本"><i data-lucide="download"></i></button><button class="icon-button" data-close="vocabulary-dialog" aria-label="关闭单词本" title="关闭"><i data-lucide="x"></i></button></div><div class="vocab-tabs" role="tablist"><button role="tab" data-vocab="saved" aria-selected="true">已收藏</button><button role="tab" data-vocab="unit" aria-selected="false">本单元新词</button></div><input id="vocab-search" type="search" placeholder="查找单词" aria-label="查找单词"><div id="vocab-list"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

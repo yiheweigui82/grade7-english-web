@@ -1,0 +1,148 @@
+/* HIG-inspired semantic type sizes. Reflow the layout while preserving readable text. */
+:root {
+  --reading-size: 1.5rem;
+  --support-size: max(1.125rem, calc(var(--reading-size) - .125rem));
+  --sidebar: 280px;
+  --muted: #5f7068;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  font-size: 100%;
+}
+body { font-size: 1.0625rem; }
+body[data-theme=girl] { --muted: #76616b; }
+.reading-content { font-family: inherit; line-height: 1.85; overflow-wrap: anywhere; }
+.tip p, .goal-list li>span, .profile h3 { min-width: 0; }
+.reading-content p { line-height: 1.85; }
+.new-word { border-radius: 6px; padding-inline: 3px; }
+.brand { font-size: 1.375rem; }
+.brand small { font-size: .8125rem; }
+.course span, .nav-label, .progress-title, .unit-next, .unit-next small,
+nav .nav-number, .eyebrow, .hero .unit-stamp, .goal-list li:before,
+.qnum, .page-footer>span, .writing-meta, .completion-mark, .saved-state {
+  font-size: .875rem;
+}
+.course b { font-size: 1.125rem; }
+nav a, .vocab-open, .breadcrumb, .theme-switch button,
+.text-button, .primary-button, .secondary-button,
+.settings-body>label, .settings-body select, .vocab-tabs button,
+.dialog-header select, .rating-select, .audio-upload input {
+  font-size: 1.0625rem;
+}
+.sidebar { padding-top: 24px; }
+.course { margin-top: 24px; padding-bottom: 20px; }
+.nav-label { margin-top: 20px; }
+nav { gap: 4px; }
+nav a { min-height: 48px; }
+.vocab-open, .theme-switch button, .text-button,
+.primary-button, .secondary-button, .vocab-tabs button, .sound-word {
+  min-height: 44px;
+}
+.icon-button, .dialogue-line .icon-button {
+  width: 44px;
+  height: 44px;
+}
+.dialogue-line .icon-button { margin-top: 0; opacity: .85; }
+.dialogue-line .icon-button svg { width: 20px; height: 20px; }
+.theme-switch { padding: 2px; }
+.theme-switch button { padding: 7px 11px; }
+.lesson-top h2 { font-size: 1.125rem; }
+.lesson-top, .reading-toolbar { flex-wrap: wrap; }
+.reading-toolbar, .reading-toolbar .text-button { font-size: 1rem; }
+.lesson-heading h1 { font-size: 2.125rem; overflow-wrap: anywhere; }
+.lesson-heading p, .hero p { font-size: 1.125rem; }
+.hero h1 { font-size: 2.875rem; }
+.hero .eyebrow { font-size: .875rem; }
+.hero .unit-stamp { font-size: .8125rem; }
+.block-title h2 { font-size: 1.75rem; }
+.instruction, .goal-list li, .bank, .intro-item p, .profile p,
+.form-field input, .form-field textarea, .blank, .sound-word,
+.writing-editor textarea { font-size: var(--reading-size); }
+.instruction { color: var(--ink); }
+.goal-heading, .dialogue-head, .intro-item h3, .profile h3,
+.exercise h3, .open-task h3, caption, .expressions h3,
+.form-field, .tip, table, th, .choice-label, .expressions p {
+  font-size: var(--support-size);
+}
+.tip { color: var(--ink); }
+.profile h3 small { font-size: 1rem; line-height: 1.5; }
+.exercise-code { font-size: 1rem; min-height: 32px; min-width: 32px; }
+.dialogue-line .speaker { font-size: 1.0625rem; width: 90px; min-width: 90px; }
+.dialogue-line .line-text { min-width: 0; overflow-wrap: anywhere; }
+.blank { width: 155px; min-height: 44px; }
+.answer-hint, .exercise-result, .tf-options label, .audio-note,
+.rating-label, .note, .vocab-word small, .empty-state,
+#toast, .muted { font-size: 1.0625rem; }
+.tf-options label, .choice-label { min-height: 44px; }
+.rating-select { min-height: 44px; max-width: 150px; }
+.settings-body output { font-size: 1rem; }
+.settings-body>label { flex-wrap: wrap; }
+.settings-body select { max-width: 100%; }
+.sound-letter { font-size: 2rem; }
+.sound-ipa { font-size: 1.5rem; }
+.sound-group { grid-template-columns: 90px 85px minmax(0,1fr); }
+.sound-words { justify-content: flex-start; }
+.vocab-word { font-size: 1.375rem; }
+.dialog-header h2 { font-size: 1.375rem; }
+dialog { width: min(560px, calc(100% - 28px)); }
+.word-dialog { width: min(640px, calc(100% - 28px)); padding: 32px; }
+.word-dialog h2 { font-size: 2.25rem; padding-right: 18px; }
+.word-dialog #word-meaning { font-size: 1.375rem; }
+.word-actions { flex-wrap: wrap; margin-top: 22px; }
+.word-dialog { overflow-y: auto; overscroll-behavior: contain; }
+.word-dialog>form { position: sticky; top: -16px; height: 0; z-index: 3; }
+.word-dialog .close-dialog { top: -12px; right: -12px; background: var(--paper); }
+.word-structure { border-top: 1px solid var(--line); margin-top: 26px; padding-top: 20px; }
+.word-structure>h3 { margin-bottom: 14px; font-size: 1.125rem; }
+.structure-step { overflow-wrap: anywhere; }
+.structure-step+.structure-step { border-top: 1px dashed var(--line); margin-top: 20px; padding-top: 18px; }
+.structure-kind { font-size: 1rem; color: var(--accent); margin-bottom: 8px; }
+.structure-formula { font-size: var(--reading-size); line-height: 1.6; font-weight: 600; margin-bottom: 14px; }
+.structure-parts { margin: 0 0 14px; }
+.structure-parts>div { display: grid; grid-template-columns: minmax(80px,.65fr) minmax(0,2fr); gap: 10px 16px; margin-block: 10px; }
+.structure-parts dt { font-size: 1.25rem; font-weight: 600; color: var(--accent); }
+.structure-parts dd { margin: 0; font-size: 1.1875rem; line-height: 1.7; }
+.structure-note { margin-bottom: 0; font-size: 1.1875rem; color: var(--muted); line-height: 1.8; }
+.word-example { border-top: 1px solid var(--line); margin-top: 26px; padding-top: 18px; }
+.example-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+.example-heading h3 { font-size: 1.0625rem; color: var(--muted); margin: 0; }
+#word-example-en { font-size: var(--reading-size); line-height: 1.65; margin-bottom: 12px; overflow-wrap: anywhere; }
+#word-example-zh { font-size: 1.25rem; line-height: 1.7; color: var(--muted); margin: 0; }
+.word-example mark { background: var(--highlight); color: var(--highlight-ink); border-radius: 6px; padding: 1px 3px; }
+.intro-grid, .profiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+.form-grid, .goal-list { grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); }
+.form-field:last-child:nth-child(odd) { grid-column: auto; }
+.writing-layout { grid-template-columns: minmax(230px, .8fr) minmax(0, 1.5fr); }
+.hero-content { padding-top: 18px; }
+@media (max-width: 1150px) {
+  :root { --sidebar: 260px; }
+  .writing-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 800px) {
+  :root { --sidebar: 0px; }
+  .sidebar { width: min(300px, 90%); }
+  .topbar { height: auto; min-height: 72px; padding-block: 8px; flex-wrap: wrap; gap: 8px; }
+  .sound-group { grid-template-columns: 90px minmax(0,1fr); gap: 12px; }
+  .sound-words { grid-column: 1 / -1; }
+  .dialogue-image { float: none; display: block; margin: 0 auto 20px; }
+}
+@media (max-width: 520px) {
+  .structure-parts>div { grid-template-columns: minmax(0,1fr); gap: 3px; margin-block: 14px; }
+  .hero { padding-top: 48px; }
+  .hero .unit-stamp { top: 12px; right: 12px; }
+  .hero p { max-width: none; }
+  .hero-content { padding-top: 8px; }
+  .word-dialog { padding: 24px; }
+  .word-actions { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .dialogue-line { display: grid; grid-template-columns: minmax(0,1fr) 44px; gap: 4px 8px; margin-bottom: 18px; }
+  .dialogue-line .speaker { grid-column: 1; width: auto; min-width: 0; }
+  .dialogue-line .line-text { grid-column: 1; grid-row: 2; }
+  .dialogue-line .icon-button { grid-column: 2; grid-row: 1 / span 2; }
+  .profile-top { flex-wrap: wrap; }
+  .intro-item { display: block; }
+  .intro-item img { float: left; margin: 0 16px 10px 0; }
+  .intro-item p { clear: both; }
+  .page-footer { flex-wrap: wrap; }
+}
+@media (max-width: 359px) {
+  .breadcrumb strong { display: none; }
+  .top-actions { margin-left: auto; }
+}
